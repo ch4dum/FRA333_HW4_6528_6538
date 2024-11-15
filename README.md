@@ -1,5 +1,4 @@
-# Homework Assignment 4: Trajectory Generator
-# **Quintic Polynomial Trajectory Generation**
+# Homework Assignment 4: Trajectory Generator **Quintic Polynomial Trajectory Generation**
 
 This repository implements a **trajectory generation system** for multi-DOF robotic arms using **Quintic Polynomial** equations. It provides smooth motion generation between waypoints, adhering to constraints such as maximum velocity and acceleration.
 
