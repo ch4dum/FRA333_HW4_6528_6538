@@ -174,23 +174,23 @@ plt.show()
 ```
 ## **Checking Answer**
 
-trajectory for joint $q1$:
+via point 1 Result:
 
 ![image](https://github.com/user-attachments/assets/f93cbc23-c1a3-49f9-9e6b-5069d9986fd7)
 
-trajectory for joint $q2$:
+via point 2 Result:
 
 ![image](https://github.com/user-attachments/assets/94c40fbf-d285-4d8d-a64e-e7c70a77547e)
 
-trajectory for joint $q3$:
+via point 3 Result:
 
 ![image](https://github.com/user-attachments/assets/26a571fc-c074-44e8-8907-3ac0e04fc762)
 
-trajectory for joint $q4$:
+via point 4 Result:
 
 ![image](https://github.com/user-attachments/assets/7fdc1630-94ea-4f0a-b80a-46acf412b69b)
 
-trajectory for joint $q5$:
+via point 5 Result:
 
 ![image](https://github.com/user-attachments/assets/015adb46-f531-4aac-a272-01d3330bb221)
 
