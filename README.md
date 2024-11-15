@@ -172,5 +172,30 @@ plt.title("Acceleration vs Time")
 plt.tight_layout()
 plt.show()
 ```
+## **Checking Answer**
+
+trajectory for joint $q1$:
+
+![image](https://github.com/user-attachments/assets/f93cbc23-c1a3-49f9-9e6b-5069d9986fd7)
+
+trajectory for joint $q2$:
+
+![image](https://github.com/user-attachments/assets/94c40fbf-d285-4d8d-a64e-e7c70a77547e)
+
+trajectory for joint $q3$:
+
+![image](https://github.com/user-attachments/assets/26a571fc-c074-44e8-8907-3ac0e04fc762)
+
+trajectory for joint $q4$:
+
+![image](https://github.com/user-attachments/assets/7fdc1630-94ea-4f0a-b80a-46acf412b69b)
+
+trajectory for joint $q5$:
+
+![image](https://github.com/user-attachments/assets/015adb46-f531-4aac-a272-01d3330bb221)
+
+Our testing scores:
+
+![image](https://github.com/user-attachments/assets/a531d9d5-2f86-472d-a9ec-8d2a3c338457)
 
 ---
