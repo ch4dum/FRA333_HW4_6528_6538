@@ -5,7 +5,7 @@ This repository implements a **trajectory generation system** for multi-DOF robo
 
 ---
 
-## **Features**
+## Features
 
 - **Smooth Trajectories**: Uses Quintic Polynomials for position, velocity, and acceleration calculations.
 - **Constraint Adherence**:
@@ -16,26 +16,27 @@ This repository implements a **trajectory generation system** for multi-DOF robo
 
 ---
 
-## **Mathematical Foundations**
+## Mathematical Foundations
 
-### **1. Quintic Polynomial Equation**
+### 1. Quintic Polynomial Equation
 A **Quintic Polynomial** is defined as:
 
 $$p(t) = c_5 t^5 + c_4 t^4 + c_3 t^3 + c_2 t^2 + c_1 t + c_0$$
 
 Where:
 - $p(t)$: Position at time $t$
-- $c_0, c_1, \dots, c_5$ : Coefficients of the polynomial
+- $c_0, c_1, \dots, c_5$: Coefficients of the polynomial
 
-### **2. Derivatives**
+### 2. Derivatives
 - **Velocity**:
   
 $$v(t) = \frac{d p(t)}{dt} = 5c_5 t^4 + 4c_4 t^3 + 3c_3 t^2 + 2c_2 t + c_1$$
+
 - **Acceleration**:
   
 $$a(t) = \frac{d^2 p(t)}{dt^2} = 20c_5 t^3 + 12c_4 t^2 + 6c_3 t + 2c_2$$
 
-### **3. System of Equations for Coefficients**
+### 3. System of Equations for Coefficients
 The coefficients of the polynomial are calculated using boundary conditions:
 
 $$A \cdot C = B$$
@@ -80,21 +81,21 @@ Evaluates position, velocity, and acceleration at a given time $t$.
 
 ---
 
-### **2. `HW4TrajGen(via_points)`**
+### 2. `HW4TrajGen(via_points)`
 
-#### **Purpose**:
+#### Purpose:
 Generates coefficients for a trajectory passing through waypoints.
 
-#### **Input**:
--  via_points : Waypoints ($N \times K+1$) where $N$ is the number of DOFs.
+#### Input:
+-  via_points: Waypoints ($N \times K+1$) where $N$ is the number of DOFs.
 
-#### **Output**:
+#### Output:
 - $C$: Coefficients of the polynomial ($N \times K \times 6$)
 - $t_i$: Start times for each segment
 - $T$: Total trajectory time
-- $\text{flag}$ : Success or failure indicator
+- $\text{flag}$: Success or failure indicator
 
-#### **Process**:
+#### Process:
 1. **Divide Time into Segments**:
    - Compute time for each segment dynamically to meet constraints:
      - Maximum velocity ($v_{\text{max}}$).
@@ -113,7 +114,7 @@ Generates coefficients for a trajectory passing through waypoints.
 
 ---
 
-## **Example Usage**
+## Example Usage
 
 ```python
 via_points = np.array([
@@ -137,7 +138,7 @@ else:
 
 ---
 
-## **Visualization**
+## Visualization
 
 To visualize the trajectory, plot position, velocity, and acceleration over time:
 
@@ -172,7 +173,7 @@ plt.title("Acceleration vs Time")
 plt.tight_layout()
 plt.show()
 ```
-## **Checking Answer**
+## Checking Answer
 
 via point 1 Result:
 
